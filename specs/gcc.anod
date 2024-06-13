@@ -27,7 +27,7 @@ class GCC(spec("gh-artifact")):
                 url=(
                     "https://ftp.gnu.org/gnu/gcc/gcc-%s/%s"
                     % (self.version, self.tarball)
-                    if self.env.target.cpu.name == "x86_64"
+                    if self.env.target.cpu.name == "x86_64" or self.env.target.cpu.name == "aarch64"
                     else
                     "https://github.com/iains/gcc-14-branch/archive/refs/"
                     + "tags/gcc-14.1-darwin-r0.tar.gz"

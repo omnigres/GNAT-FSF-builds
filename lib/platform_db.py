@@ -51,3 +51,5 @@ class PlatDB(PlatformDBPlugin):
 
             }
         )
+
+        self.host_guess.update({"aarch64-linux": {"os": "Linux", "cpu": "aarch64"}})
